@@ -1,1 +1,58 @@
-dddsada
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cómo Llegar - InfoPolo</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Estilo para el contenedor del mapa */
+        #map {
+            height: 600px;
+            width: 100%;
+            border: 0;
+        }
+        /* Estilos para los botones */
+        .map-buttons {
+            display: flex;
+            gap: 10px;
+            margin: 15px 0;
+        }
+        .map-buttons button {
+            padding: 10px 15px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="http://www.polooeste.com.uy" class="logo">
+            <img src="logo.png" alt="InfoPolo Logo">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="maps.html">Cómo Llegar</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Lugares de interes - InfoPolo</h1>
+        <p>Selecciona un sitio para visualizarla en el mapa:</p>
+
+        <!-- Botones para cambiar capas -->
+        <!-- Contenedor para el mapa -->
+        <iframe id="map" src="https://www.google.com/maps/d/embed?mid=1ZXDK9m9brRZpU63Xm6QVfiQKVrrOOKk&ehbc=2E312F"></iframe>
+    </main>
+    <footer>
+        <p>&copy; 2024 InfoPolo</p>
+    </footer>
+
+    <script>
+        // Cambiar el enlace del mapa en el iframe para mostrar diferentes capas
+        function changeMapLayer(url) {
+            document.getElementById("map").src = url;
+        }
+    </script>
+</body>
+</html>
