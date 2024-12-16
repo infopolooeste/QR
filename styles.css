@@ -17,13 +17,13 @@ header {
 }
 
 .logo {
-    margin-left: 10px; /* Mueve el logo 5 milímetros a la derecha */
+    margin-left: 50px; /* Mueve el logo 5 milímetros a la derecha */
     animation: fade-in 2s ease-out; /* Nuevo efecto de aparición */
     position: relative;
 }
 
 .logo img {
-    max-width: 100px; /* Tamaño del logo */
+    max-width: 200px; /* Tamaño del logo */
     height: auto;
     transition: opacity 0.5s ease;
 }
