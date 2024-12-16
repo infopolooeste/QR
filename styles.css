@@ -18,19 +18,26 @@ header {
 
 .logo {
     margin-left: 10px; /* Mueve el logo 5 milímetros a la derecha */
-    animation: logo-animate 5s infinite; /* Animación del logo */
-    position: relative; /* Asegura que no se vea afectado por otros elementos */
+    animation: fade-in 2s ease-out; /* Nuevo efecto de aparición */
+    position: relative;
 }
 
 .logo img {
     max-width: 100px; /* Tamaño del logo */
     height: auto;
-    transition: transform 0.5s ease;
-    animation: logo-animate 10s infinite alternate; /* Efecto de zoom del logo */
+    transition: opacity 0.5s ease;
 }
 
-.logo img:hover {
-    transform: scale(1.1); /* Efecto de zoom en el logo */
+/* Nueva animación de aparición */
+@keyframes fade-in {
+    0% {
+        opacity: 0; /* Comienza invisible */
+        transform: translateY(-20px); /* Desplazamiento inicial hacia arriba */
+    }
+    100% {
+        opacity: 1; /* Totalmente visible */
+        transform: translateY(0); /* Sin desplazamiento */
+    }
 }
 
 nav ul {
@@ -114,16 +121,6 @@ footer {
     padding: 10px 0;
     text-align: center;
     margin-top: 20px;
-}
-
-/* Animación del logo */
-@keyframes logo-animate {
-    0% {
-        transform: scale(1);
-    }
-    100% {
-        transform: scale(1.1); /* Efecto de zoom más sutil */
-    }
 }
 
 /* Estilos responsivos */
