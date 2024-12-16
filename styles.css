@@ -8,7 +8,7 @@ body {
 
 header {
     display: flex;
-    justify-content: center; /* Centra todos los elementos dentro del header */
+    justify-content: space-between;
     align-items: center;
     background-color: #5fbc2d;
     color: #fff;
@@ -16,8 +16,9 @@ header {
     overflow: visible; /* Permite que el logo no se corte */
 }
 
+/* Mueve el logo 5 milímetros a la derecha */
 .logo {
-    margin-right: auto; /* Mueve el logo al extremo izquierdo */
+    margin-left: 50px; /* 5 milímetros a la derecha */
     animation: fade-in 2s ease-out; /* Nuevo efecto de aparición */
     position: relative;
 }
@@ -40,11 +41,9 @@ header {
     }
 }
 
-/* Centrar los botones del header */
+/* Mueve los botones 5 milímetros a la derecha */
 nav {
-    flex-grow: 1; /* Ocupa el espacio entre el logo y el resto del header */
-    display: flex;
-    justify-content: center; /* Centra los botones horizontalmente */
+    margin-right: 50px; /* 5 milímetros a la derecha */
 }
 
 nav ul {
