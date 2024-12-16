@@ -22,7 +22,7 @@ header {
 }
 
 .logo {
-    margin-left: 50px; /* Mueve el logo 5 milímetros a la derecha */
+    margin-left: 100px; /* Mueve el logo 5 milímetros a la derecha */
     animation: logo-animate 5s infinite; /* Animación del logo */
     
 }
