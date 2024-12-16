@@ -17,7 +17,7 @@ header {
 }
 
 .logo {
-    margin-left: 100px; /* Mueve el logo 5 milímetros a la derecha */
+    margin-left: 10px; /* Mueve el logo 5 milímetros a la derecha */
     animation: fade-in 2s ease-out; /* Nuevo efecto de aparición */
     position: relative;
 }
@@ -38,6 +38,11 @@ header {
         opacity: 1; /* Totalmente visible */
         transform: translateY(0); /* Sin desplazamiento */
     }
+}
+
+/* Mueve todos los botones del header 10 milímetros a la izquierda */
+nav {
+    margin-left: -100px; /* 10 milímetros a la izquierda */
 }
 
 nav ul {
