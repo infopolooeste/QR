@@ -1,1 +1,138 @@
-dfgdfg
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para su acceso - InfoPolo</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .form-container {
+            display: none;
+            margin-top: 20px;
+        }
+
+        .form-container input {
+            display: block;
+            margin-bottom: 10px;
+            padding: 10px;
+            font-size: 1em;
+            width: 100%;
+            max-width: 300px;
+            margin: 0 auto 15px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .form-container button {
+            padding: 10px 20px;
+            font-size: 1em;
+            background-color: #5fbc2d;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .form-container button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4);
+        }
+
+        .checkbox-container {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        /* Estilo para las palomitas centradas a la izquierda */
+        .safety-list {
+            color: white;
+            margin: 20px auto;
+            max-width: 800px;
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.6);
+            border-radius: 8px;
+        }
+
+        .safety-list ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: left; /* Centrado a la izquierda */
+        }
+
+        .safety-list ul li {
+            margin-bottom: 10px;
+        }
+
+        .safety-list ul li::before {
+            content: "✔️";
+            margin-right: 8px;
+            color: white; /* Palomitas en blanco */
+        }
+
+        .safety-list ul li strong {
+            font-weight: bold; /* Negrita */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="InfoPolo Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Control de accesos</h1>
+        <p>Información importante para su acceso al parque.</p>
+
+        <!-- Imagen Central -->
+        <div style="text-align: center;">
+            <img src="Bannerseguridad.png" alt="Seguridad Integra" style="max-width: 100%; height: auto;">
+        </div>
+
+        <!-- Lista con palomitas centradas a la izquierda -->
+        <div class="safety-list">
+            <ul>
+                <li><strong>Para su registro se le colicitará: documento de identidad, nombre completo, teléfono celular, empresa a visitar, empresa de origen.</li>
+                <li><strong>BARRERAS</strong>: con apertura automática mediante lectura de matrículas.</li>
+                <li><strong>NOTIFICACIÓN</strong>: vía e-mail, Whatsapp, monitoreo en sala de transportistas.</li>
+                <li><strong>TRAZABILIDAD</strong>: registro histórico de ingresos, infracciones y estados.</li>
+                <li><strong>VELOCIDAD</strong>: máximo 15 KM/H.</li>
+                <li><strong>PEATÓN</strong>: circular por sendas peatonales identificadas.</li>
+                <li><strong>ROTONDA>: ingresar de manera correcta, las flechas en el cordón le indicarán el sentido.</li>
+                <li><strong>ESTACIONAMIENTO</strong>: respete los lugares señalados y autorizados.</li>
+                
+            </ul>
+        </div>
+
+        <!-- Segunda imagen -->
+        <div style="text-align: center;">
+            <img src="Bannerseguridad2.png" alt="Seguridad Integra" style="max-width: 100%; height: auto;">
+        </div>
+
+        <!-- Checkbox y Formulario -->
+        <div class="checkbox-container">
+            <label>
+                <input type="checkbox" id="securityCheckbox"> He leído y comprendido las normas de seguridad
+            </label>
+        </div>
+
+        <form id="securityForm" onsubmit="submitForm(event)">
+            <div class="form-container" id="formContainer">
+                <input type="text" id="document" name="document" placeholder="Documento de Identidad" required>
+                <input type="text" id="fullName" name="fullName" placeholder="Nombre Completo" required>
+                <button type="submit">Aceptar</button>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2024 InfoPolo</p>
+    </footer>
+   
+</body>
+</html>
