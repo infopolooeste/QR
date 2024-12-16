@@ -1,5 +1,5 @@
 * {
-    overflow-x: hidden;
+    overflow-x: visible;
 }
 
 /* Estilos generales */
@@ -18,12 +18,13 @@ header {
     background-color: #5fbc2d;
     color: #fff;
     padding: 10px 20px;
-    overflow-x: visible;
+    overflow: hidden;
 }
 
 .logo {
     margin-left: 10px; /* Mueve el logo 5 milímetros a la derecha */
     animation: logo-animate 5s infinite; /* Animación del logo */
+    
     
 }
 
