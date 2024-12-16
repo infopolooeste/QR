@@ -9,7 +9,7 @@ body {
 header {
     display: flex;
     justify-content: space-between; /* Ajustado para mayor flexibilidad */
-    align-items: left;
+    align-items: center;
     background-color: #5fbc2d;
     color: #fff;
     padding: 10px 20px;
