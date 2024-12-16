@@ -1,9 +1,3 @@
-* {
-    overflow-x: hidden;
-}
-
-/* Estilos generales */
-
 body {
     font-family: Arial, sans-serif;
     background-color: #6d6e71; /* Fondo gris oscuro */
@@ -23,13 +17,13 @@ header {
 }
 
 .logo {
-    margin-left: 100px; /* Mueve el logo 5 milímetros a la derecha */
+    margin-left: 10px; /* Mueve el logo 5 milímetros a la derecha */
     animation: fade-in 2s ease-out; /* Nuevo efecto de aparición */
     position: relative;
 }
 
 .logo img {
-    max-width: 200px; /* Tamaño del logo */
+    max-width: 100px; /* Tamaño del logo */
     height: auto;
     transition: opacity 0.5s ease;
 }
@@ -58,6 +52,12 @@ nav ul li {
     margin-left: 20px;
 }
 
+/* Mueve los botones de Inicio y Nosotros hacia la izquierda */
+nav ul li:nth-child(1),
+nav ul li:nth-child(2) {
+    margin-left: -50px; /* 5 milímetros a la izquierda */
+}
+
 nav ul li a {
     color: #fff;
     text-decoration: none;
@@ -65,7 +65,7 @@ nav ul li a {
 }
 
 main {
-    padding: 30px;
+    padding: 20px;
     text-align: center;
 }
 
