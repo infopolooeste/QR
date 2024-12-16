@@ -18,7 +18,7 @@ header {
     background-color: #5fbc2d;
     color: #fff;
     padding: 10px 20px;
-    overflow: hidden;
+    overflow-x: visible;
 }
 
 .logo {
