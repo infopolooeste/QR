@@ -8,27 +8,25 @@ body {
 
 header {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between; /* Ajustado para mayor flexibilidad */
     align-items: center;
     background-color: #5fbc2d;
     color: #fff;
     padding: 10px 20px;
-    overflow: hidden;
+    overflow: visible; /* Permite que el logo no se corte */
 }
 
 .logo {
     margin-left: 10px; /* Mueve el logo 5 milímetros a la derecha */
     animation: logo-animate 5s infinite; /* Animación del logo */
-    
-    
+    position: relative; /* Asegura que no se vea afectado por otros elementos */
 }
 
 .logo img {
-    max-width: 100px; /* Reducción del tamaño del logo en 5 milímetros */
+    max-width: 100px; /* Tamaño del logo */
     height: auto;
     transition: transform 0.5s ease;
     animation: logo-animate 10s infinite alternate; /* Efecto de zoom del logo */
-    overflow-x: visible;
 }
 
 .logo img:hover {
