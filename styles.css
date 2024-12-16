@@ -24,10 +24,11 @@ header {
 .logo {
     margin-left: 50px; /* Mueve el logo 5 milímetros a la derecha */
     animation: logo-animate 5s infinite; /* Animación del logo */
+    overflow-x: visible;
 }
 
 .logo img {
-    max-width: 80px; /* Reducción del tamaño del logo en 5 milímetros */
+    max-width: 100px; /* Reducción del tamaño del logo en 5 milímetros */
     height: auto;
     transition: transform 0.5s ease;
     animation: logo-animate 10s infinite alternate; /* Efecto de zoom del logo */
