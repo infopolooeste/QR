@@ -52,12 +52,6 @@ nav ul li {
     margin-left: 20px;
 }
 
-/* Mueve los botones de Inicio y Nosotros hacia la izquierda */
-nav ul li:nth-child(1),
-nav ul li:nth-child(2) {
-    margin-left: -100px; /* 5 milímetros a la izquierda */
-}
-
 nav ul li a {
     color: #fff;
     text-decoration: none;
