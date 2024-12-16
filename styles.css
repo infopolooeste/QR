@@ -22,12 +22,12 @@ header {
 }
 
 .logo {
-    margin-left: 300px; /* Mueve el logo 5 milímetros a la derecha */
+    margin-left: 50px; /* Mueve el logo 5 milímetros a la derecha */
     animation: logo-animate 5s infinite; /* Animación del logo */
 }
 
 .logo img {
-    max-width: 20px; /* Logo más grande */
+    max-width: 150px; /* Reducción del tamaño del logo en 5 milímetros */
     height: auto;
     transition: transform 0.5s ease;
     animation: logo-animate 10s infinite alternate; /* Efecto de zoom del logo */
@@ -147,7 +147,7 @@ footer {
     }
 
     .logo img {
-        max-width: 200px;
+        max-width: 150px; /* Tamaño reducido también en pantallas pequeñas */
     }
 }
 
@@ -166,6 +166,6 @@ footer {
     }
 
     .logo img {
-        max-width: 200px;
+        max-width: 150px; /* Tamaño reducido también en pantallas muy pequeñas */
     }
 }
