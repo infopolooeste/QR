@@ -16,9 +16,10 @@ header {
     overflow: visible; /* Permite que el logo no se corte */
 }
 
-/* Mueve el logo 5 milímetros a la derecha */
+/* Mueve el logo y separa 5 milímetros del resto del header */
 .logo {
-    margin-left: 30px; /* 5 milímetros a la derecha */
+    margin-left: 50px; /* 5 milímetros a la derecha del borde izquierdo */
+    margin-right: 50px; /* 5 milímetros de separación con los botones */
     animation: fade-in 2s ease-out; /* Nuevo efecto de aparición */
     position: relative;
 }
@@ -44,6 +45,9 @@ header {
 /* Mueve los botones 5 milímetros a la derecha */
 nav {
     margin-right: 50px; /* 5 milímetros a la derecha */
+    flex-grow: 1; /* Permite que el logo y los botones se distribuyan */
+    display: flex;
+    justify-content: flex-start; /* Alineación inicial */
 }
 
 nav ul {
