@@ -12,7 +12,7 @@ body {
 }
 
 header {
-    
+    display: flex;
     justify-content: space-around;
     align-items: center;
     background-color: #5fbc2d;
@@ -22,7 +22,7 @@ header {
 }
 
 .logo {
-    margin-left: 50px; /* Mueve el logo 5 milímetros a la derecha */
+    margin-left: 300px; /* Mueve el logo 5 milímetros a la derecha */
     animation: logo-animate 5s infinite; /* Animación del logo */
 }
 
